@@ -27,9 +27,10 @@ It integrates the **Bitly API** to generate short links and provides a responsiv
 # ⚙️ Setup Instructions (Local Development)
 
 ### 1. Clone the repository
+```
 git clone https://github.com/Allarezeroes26/URL-Shortener.git
 cd URL-shortener
-
+```
 ### 2. Install dependencies
 npm install
 
