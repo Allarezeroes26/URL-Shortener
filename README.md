@@ -43,7 +43,7 @@ BITLY_API_KEY=your_api_key_here
 MONGO_URI=your_mongodb_connection_string
 PORT=3000
 ```
-# 4. Run the app
+### 4. Run the app
 ```
 npm start
 ```
