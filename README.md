@@ -72,4 +72,4 @@ Response:
 
 ## 🌐 Demo
 
-Live Demo: https://comingsoon.p
+Live Demo: https://url-shortener-z7fr.onrender.com
