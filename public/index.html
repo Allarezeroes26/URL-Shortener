@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URL Shortener</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="nav">
+        <h1 class="logo">S.T</h1>
+      </div>
+    </header>
+    <section id="hero" class="hero">
+      <div class="left-side">
+        <h1 class="content-title">SHORTENER</h1>
+        <p class="sub-header"><span style="color: #FF6B6B">Fast</span>, <span style="color:#FF6B6B">reliable</span>, and simple link shortener</p>
+      </div>
+      <div class="right-side">
+        <p class="desc">Built with Node.js and Express for the backend, MongoDB for storing URLs, and the Bitly API for generating short links. The frontend is created using HTML, CSS, and JavaScript, featuring a minimalistic look.</p>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="instructions">
+        <h1 class="instructionTitle">Simplify your links in seconds.</h1>
+        <p class="instructionDesc">Paste your long URL, click shorten, and get a neat Bitly link you can share anywhere.</p>
+      </div>
+      <form id="shortenForm">
+        <input type="url" id="urlInput" placeholder="Enter URL" required>
+        <button type="submit">Shorten</button>
+      </form>
+      <div id="result"></div>
+    </section>
+    <footer class="footer">
+      <div class="footer-main">
+        <h1 class="footer-title">READY TO VIEW THE CODE?</h1>
+        <a href="https://github.com/Allarezeroes26/URL-Shortener" target="_blank" class="footer-btn">VIEW GITHUB REPO</a>
+      </div>
+
+      <hr class="footer-divider" />
+
+      <div class="footer-bottom">
+        <div class="footer-links-left">
+          <a href="#hero">Back to Top</a>
+          <a href="#">Portfolio</a>
+        </div>
+
+        <div class="footer-info">
+          <p>Designed by <strong>John Erwin Bacani</strong> | 2024</p>
+        </div>
+
+        <div class="footer-links-right">
+          <a href="#">LinkedIn</a>
+          <a href="mailto:johnerwibacani26@gmail.com">Email</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

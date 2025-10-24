@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: black;
+  background-color: #ECFAE5;
+  font-family: "Roboto", sans-serif;
+}
+
+.hero {
+  display: flex;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+  gap: 3rem;
+  border-top: 2px solid black;
+  z-index: 1;
+}
+
+.content-title {
+  font-size: 7rem;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: bold;
+  letter-spacing: -2px;
+  background-color: black;
+  color: white;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.sub-header {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.desc {
+  font-size: 2rem;
+  font-weight: 200;
+  word-spacing: 2px;
+}
+
+.right-side {
+  width: 40%;
+}
+
+header {
+  margin: 2rem 5rem;
+  font-size: larger;
+}
+
+.content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#shortenForm {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+#shortenForm button, #copyBtn{
+  padding: 1rem;
+  height: 3rem;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  color: white;
+  border: none;
+  background-color: #FF6B6B;
+  transition: 0.2s ease-in-out;
+}
+
+#shortenForm button, #copyBtn:hover {
+  transform: scale(1.1);
+}
+
+
+#urlInput, #shortUrlInput {
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  border: none;
+  height: 3rem;
+  width: 50%;
+  padding: 0 1.3rem;
+  font-size: 1rem;
+}
+
+#urlInput, #shortUrlInput:focus {
+  outline: none;
+  border: none;
+}
+
+.instructions {
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+.instructionTitle {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+#result {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.shorteningResult {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.shortUrlTitle {
+  font-weight: 600;
+  margin-right: 0.3rem;
+}
+
+.footer {
+  background-color: #96A78D;
+  color: #fff;
+  text-align: center;
+  padding: 6rem 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.footer-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.footer-btn {
+  background-color: #FF6B6B;
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2.5rem;
+  border-radius: 40px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer-btn:hover {
+  transform: scale(1.1);
+  background-color: #ff8585;
+}
+
+.footer-divider {
+  width: 80%;
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.footer-bottom {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+
+.footer-links-left, .footer-links-right {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-links-left a, 
+.footer-links-right a {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.footer-links-left a:hover, 
+.footer-links-right a:hover {
+  opacity: 0.7;
+}
+
+.footer-info p {
+  margin: 0;
+  font-weight: 300;
+}
+
+
+/* ─────────────── RESPONSIVE DESIGN ─────────────── */
+
+/* 🖥️ Large Screens (1200px and up) */
+@media (min-width: 1200px) {
+  .hero {
+    padding: 0 8rem;
+  }
+  .content-title {
+    font-size: 5rem;
+  }
+  .desc {
+    font-size: 1.5rem;
+  }
+}
+
+/* 💻 Laptops & Tablets Landscape (769px–1199px) */
+@media (max-width: 1199px) and (min-width: 769px) {
+  .hero {
+    flex-direction: row;
+    padding: 0 4rem;
+    gap: 2rem;
+  }
+  .content-title {
+    font-size: 5rem;
+  }
+  .desc {
+    font-size: 1.5rem;
+  }
+  #shortenForm {
+    width: 80%;
+  }
+  footer {
+    padding: 2rem;
+  }
+}
+
+/* 📱 Tablets Portrait & Large Phones (481px–768px) */
+@media (max-width: 768px) {
+  header {
+    margin: 1.5rem 2rem;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 2rem;
+    height: auto;
+    gap: 2rem;
+  }
+
+  .left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+
+  .right-side {
+    width: 100%;
+    height: 40vh;
+  }
+
+  .content-title {
+    font-size: 4rem;
+  }
+
+  .sub-header {
+    font-size: 1.2rem;
+  }
+
+  .desc {
+    font-size: 1.2rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .content {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  #shortenForm, .shorteningResult {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #urlInput, #shortUrlInput {
+    width: 90%;
+    border-radius: 30px;
+    margin-bottom: 1rem;
+  }
+
+  #shortenForm button, #copyBtn {
+    width: 60%;
+    border-radius: 30px;
+  }
+
+  .instructions {
+    text-align: center;
+  }
+
+  .instructionTitle {
+    font-size: 1.4rem;
+  }
+
+  .instructionDesc {
+    font-size: 1rem;
+  }
+
+  /* Footer layout stack */
+  .footerClass {
+    height: auto;
+    padding: 4rem 2rem;
+  }
+
+  .mainFooter {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .bottomFooter {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.2rem;
+  }
+
+  .rightFooter, .leftFooter {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}
+
+/* 📱 Small Mobile (≤480px) */
+@media (max-width: 480px) {
+  .content-title {
+    font-size: 3rem;
+  }
+
+  .left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+  }
+
+  .right-side {
+    height: 40vh;
+  }
+
+  .sub-header {
+    font-size: 1rem;
+  }
+
+  .desc {
+    font-size: 1rem;
+  }
+
+  .content {
+    height: 50vh;
+  }
+
+  #shortenForm, .shorteningResult {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #urlInput, #shortUrlInput {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  #shortenForm button, #copyBtn {
+    width: 80%;
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+
+  .footerClass {
+    padding: 3rem 1rem;
+  }
+
+  .footerClass h1 {
+    font-size: 1.3rem;
+  }
+
+  .bottomFooter {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .leftFooter a,
+  .rightFooter a,
+  .rightFooter p {
+    font-size: 0.85rem;
+  }
+}
