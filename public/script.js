@@ -27,7 +27,6 @@ form.addEventListener('submit', async (e) => {
     console.log('API response', data);
 
     if (data.shortUrl) {
-      // Replace the whole form with the short link + copy button
       form.innerHTML = `
         <div class="shorteningResult">
           <input type="text" value="${data.shortUrl}" id="shortUrlInput" readonly>
