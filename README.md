@@ -5,7 +5,7 @@ It integrates the **Bitly API** to generate short links and provides a responsiv
 
 ---
 
-## 🚀 Features
+# 🚀 Features
 
 - Shorten long URLs in one click  
 - Copy the shortened link easily  
@@ -14,7 +14,7 @@ It integrates the **Bitly API** to generate short links and provides a responsiv
 
 ---
 
-## 🛠️ Technologies Used
+# 🛠️ Technologies Used
 
 - **Frontend:** HTML, CSS, JavaScript  
 - **Backend:** Node.js, Express  
@@ -24,7 +24,7 @@ It integrates the **Bitly API** to generate short links and provides a responsiv
 
 ---
 
-## ⚙️ Setup Instructions (Local Development)
+# ⚙️ Setup Instructions (Local Development)
 
 ### 1. Clone the repository
 git clone https://github.com/Allarezeroes26/URL-Shortener.git
@@ -40,7 +40,7 @@ BITLY_API_KEY=your_api_key_here
 MONGO_URI=your_mongodb_connection_string
 PORT=3000
 
-### 4. Run the app
+# 4. Run the app
 - npm start
 
 then visit:
@@ -48,7 +48,7 @@ http://localhost:3000
 
 ---
 
-## 🔎 API Endpoint
+# 🔎 API Endpoint
 
 POST /shorten
 Request body (JSON):
